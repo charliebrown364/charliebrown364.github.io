@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: pink;
+  color: red;
   text-align: center;
   font-family: verdana;
   font-size: 25px;
@@ -11,6 +11,13 @@ h1 {
 
 #one {
   color: blue;
+  text-align: left;
+  font-family: verdana;
+  font-size: 15px;
+}
+
+#two {
+  color: green;
   text-align: left;
   font-family: verdana;
   font-size: 15px;

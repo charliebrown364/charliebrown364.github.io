@@ -1,4 +1,4 @@
-function myFunction() {
+function changeColor() {
     
     var x = document.getElementById("one");
 
