@@ -1,7 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<style>
+body {
+  background-color: skyblue;
+}
+
+h1 {
+  color: pink;
+  text-align: center;
+  font-family: verdana;
+  font-size: 25px;
+}
+
+#one {
+  color: blue;
+  text-align: left;
+  font-family: verdana;
+  font-size: 15px;
+}
+
+#two {
+  color: red;
+  text-align: center;
+  font-family: verdana;
+  font-size: 0px;
+}
+
+</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h1 id="zero">Charlie's First Website</h1>
+<p id="one">I like to play <a href="https://surviv.io/">surviv.io</a>.</p>
+<p id="two"> second thing </p>
+
+<button onclick="myFunction()">Surviv.io</button>
+
+<script>
+function myFunction() {
+  
+  var x = document.getElementById("two");  
+  x.style.fontSize = "15px";
+  x.style.color = "red";
+  
+}
+</script>
+
 </body>
+
 </html>
