@@ -1,3 +1,7 @@
+nav {
+    border-bottom: 1px solid black;
+}
+
 body {
   background-color: skyblue;
 }
@@ -9,15 +13,8 @@ h1 {
   font-size: 25px;
 }
 
-#one {
+p {
   color: blue;
-  text-align: left;
-  font-family: verdana;
-  font-size: 15px;
-}
-
-#two {
-  color: green;
   text-align: left;
   font-family: verdana;
   font-size: 15px;
