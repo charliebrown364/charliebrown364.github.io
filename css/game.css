@@ -1,0 +1,25 @@
+nav {
+    border-bottom: 1px solid black;
+}
+
+body {
+  background-color: skyblue;
+}
+
+canvas {
+    background-color: black;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: verdana;
+  font-size: 25px;
+}
+
+p {
+  color: blue;
+  text-align: left;
+  font-family: verdana;
+  font-size: 15px;
+}

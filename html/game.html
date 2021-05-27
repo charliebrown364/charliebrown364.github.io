@@ -2,9 +2,9 @@
 <html>
 
 <head>
-
-    <title>fortnite battle royale</title>
-    <link rel="stylesheet" href="../css/main.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/game.css">
 
     <nav>
         <ul>
@@ -15,11 +15,15 @@
 
 </head>
 
-<body>
+<body onload="startGame()">
 
     <h1>Charlie's First Website</h1>
 
-    <p id="one">Second Page</p>
+    <script src="../js/game.js"></script>
+    <button onmousedown="move('up')">up</button>
+    <button onmousedown="move('down')">down</button>
+    <button onmousedown="move('left')">left</button>
+    <button onmousedown="move('right')">right</button>
 
 </body>
 
