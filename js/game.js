@@ -2,10 +2,10 @@ var player;
 
 function startGame() {
     player = new player(30, 30, "red", 120, 120);
-    myGameArea.start();
+    game.start();
 }
 
-var myGameArea = {
+var game = {
     canvas : document.createElement("canvas"),
     start : function() {
         this.canvas.width = 500;
@@ -28,7 +28,7 @@ function player(width, height, color, x, y) {
     this.y = y;
     
     this.update = function() {
-        ctx = myGameArea.context;
+        ctx = game.context;
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
@@ -37,26 +37,30 @@ function player(width, height, color, x, y) {
 
 function updateGameArea() {
 
-    myGameArea.clear();
+    game.clear();
     player.update();
 
 }
 
-function move(direction) {
+window.addEventListener('keydown', function (e) {
+    move(e.key);
+}, false);
 
-    switch(direction) {
-        case 'up':
-            player.y -= 5;
+function move(letter) {
+    
+    switch(letter) {
+        case 'w':
+            player.y -= 20;
             break;
-        case 'down':
-            player.y += 5;
+        case 's':
+            player.y += 20;
             break;
-        case 'left':
-            player.x -= 5;
+        case 'a':
+            player.x -= 20;
             break;
-        case 'right':
-            player.x += 5;
+        case 'd':
+            player.x += 20;
             break;
     }
-    
+
 }
